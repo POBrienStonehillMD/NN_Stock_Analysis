@@ -16,9 +16,6 @@ path = "C:/Users/Documents/"
 df = pd.read_csv(path + ticker + "_2Year_technical_data.csv", na_values=['NA', ''])
 
 z = df.drop(columns=['Unnamed: 0', 'date', 'time', 'open', 'high', 'low'], inplace=True)
-#df2 = df
-#print(df2)
-#zz = df2.drop(columns=['close'], inplace=True)
 
 list(df.columns)
 
